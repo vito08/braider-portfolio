@@ -1,0 +1,161 @@
+body {
+    color: white;
+    background: #0c0c0c;
+    font-family: 'Inter';
+}
+
+.logo {
+    height: 50px;
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)), url(background-image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section {
+    padding: 100px 0;
+    box-shadow: 0px 5px 13px -2px #000000;
+}
+
+.dark {
+    background: #111;
+}
+
+.card-custom {
+    border: 1px solid #333;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.card-custom:hover {
+    border-color: #d6cfc4;
+    transform: translateY(-5px);
+}
+
+.gallery {
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.gallery:hover {
+    filter: grayscale(0);
+    transform: scale(1.03);
+}   
+
+.fixed {
+    position: fixed;
+    font-size: 1rem;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.whatsapp {
+    position: fixed;
+    font-size: 5rem;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.whatsapp:hover {
+    background: #1DA851;
+    transform: scale(1.1);
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+}
+
+.profile img {
+    background: #000;
+    border: 5px solid #333;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: shake 10s ease infinite;
+}
+
+/* When hover, show a full size image as example for the card as background */
+#nago-tradicional:hover{
+    background: url(imgs/portfolio/img1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#nago-desenhada:hover{
+    background: url(imgs/portfolio/img2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#freestyle:hover{
+    background: url(imgs/portfolio/img4.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#contato {
+    transition: all ease 0.3s;
+}
+
+#social-media {
+    font-size: 3rem;
+    color: white;
+    width: 1rem;
+    padding: 0.6rem 2rem;
+    border-radius: 12px;
+    transition: all ease 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1DA851;
+}
+
+.instagram-btn:hover {
+    background: linear-gradient(-145deg, rgba(237, 0, 190), rgba(252, 182, 0));
+}
+
+@keyframes shake {
+	0%, 100% {
+        transform: translateY(0);
+    }
+	10%, 30%, 50%, 70%, 90% {
+        transform: translateY(-10px);
+    }
+	20%, 40%, 60%, 80% {
+        transform: translateY(10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-position: top;
+    }
+
+    .card-custom {
+        padding: 20px;
+    }
+
+    .whatsapp {
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    .profile img {
+    transform: scaleX(-1) rotate(-90deg);
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+}
