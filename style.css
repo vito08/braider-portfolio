@@ -9,7 +9,8 @@ body {
 }
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)), url(background-image.png);
     background-size: cover;
     background-position: center;
@@ -29,6 +30,7 @@ body {
     border: 1px solid #333;
     padding: 30px;
     transition: 0.3s;
+    user-select: none;
 }
 
 .card-custom:hover {
